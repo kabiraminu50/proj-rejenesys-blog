@@ -1,0 +1,97 @@
+/* Container of all blog posts */
+.BlogPost-con {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 50%;
+}
+
+.blog-card {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Each blog item card */
+.blog-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  transition: all 0.2s ease;
+
+  display: flex;
+  flex-direction: column; 
+  gap: 12px;
+}
+
+/* Blog image styling */
+.blog-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;       /* Ensures image fits perfectly */
+  border-radius: 12px;
+}
+
+/* Title styling */
+.blog-item h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Subtitle styling */
+.blog-item p:nth-of-type(1) {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Body content styling */
+.blog-item p:nth-of-type(2) {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5rem;
+}
+
+/* Timestamp styling */
+.blog-item small {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+button{
+  width: 30%;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16pxs;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #E5E7EB;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  transition: all 0.2s ease;
+}
+
+button:hover{
+    background-color: #B91C1C;
+}
+
+
+.article{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.input-blogPost{
+  height: 25px;
+  border: none;
+  background-color: #9CA3AF;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  z-index: 1000;
+
+}
