@@ -17,7 +17,7 @@ const handleDelete = async (id) => {
   try{
 const token = localStorage.getItem("token")
 
-await axios.delete(`https://final-project-sage-nu.vercel.app//api/post/deleteblogpost/${id}`,{
+await axios.delete(`https://final-project-sage-nu.vercel.app/api/post/deleteblogpost/${id}`,{
       headers:{
         Authorization: `Bearer ${token}`
       }
