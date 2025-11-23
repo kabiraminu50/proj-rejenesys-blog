@@ -17,7 +17,7 @@ const handleDelete = async (id) => {
   try{
 const token = localStorage.getItem("token")
 
-await axios.delete(`http://localhost:8000/api/post/deleteblogpost/${id}`,{
+await axios.delete(`https://final-project-sage-nu.vercel.app//api/post/deleteblogpost/${id}`,{
       headers:{
         Authorization: `Bearer ${token}`
       }
@@ -46,7 +46,7 @@ useEffect( () => {
 try{
 
 
-    const res = await axios.get('http://localhost:8000/api/post/getallpost')
+    const res = await axios.get('https://final-project-sage-nu.vercel.app/api/post/getallpost')
     setPosts(res.data.data)
 }catch(err){ setError(err.message)
 

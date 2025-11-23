@@ -26,7 +26,7 @@ const handleCreateNewPost = async (e) => {
 
 try{
 
-const res = await axios.post('http://localhost:8000/api/post/createblogpost',formData,{headers:{'Content-Type':'multipart/form-data',
+const res = await axios.post('https://final-project-sage-nu.vercel.app/api/post/createblogpost',formData,{headers:{'Content-Type':'multipart/form-data',
     Authorization:`Bearer ${token}`
 }});
 

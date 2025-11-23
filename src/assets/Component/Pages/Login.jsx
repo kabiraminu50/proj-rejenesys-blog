@@ -23,7 +23,7 @@ const handleLogin = async (e) => {
     setLoading(true);
     setError(false);
 try{
-   const res = await axios.post('http://localhost:8000/api/auth/login',{username,password}) 
+   const res = await axios.post('https://final-project-sage-nu.vercel.app/api/auth/login',{username,password}) 
    
 // saving token to local storage
 localStorage.setItem('token', res.data.token);

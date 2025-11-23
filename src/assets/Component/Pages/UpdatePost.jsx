@@ -17,7 +17,7 @@ const UpdatePost = () => {
     const fetchPost = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get(`http://localhost:8000/api/post/getsinglepost/${id}`, {
+        const res = await axios.get(`https://final-project-sage-nu.vercel.app/api/post/getsinglepost/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const post = res.data.data;
@@ -42,7 +42,7 @@ const UpdatePost = () => {
     if (image) formData.append("image", image);
 
     try {
-      await axios.put(`http://localhost:8000/api/post/updateblogpost/${id}`, formData, {
+      await axios.put(`https://final-project-sage-nu.vercel.app/api/post/updateblogpost/${id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
