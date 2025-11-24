@@ -21,7 +21,7 @@
 /* MOBILE RESPONSIVE */
 @media (max-width: 500px) {
   .header-con {
-    width: 95%;
+    width: 80%;
     height: auto;
     padding: 10px;
     flex-direction: column;
