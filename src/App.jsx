@@ -14,7 +14,7 @@ function App() {
 
   
   return (
-    <div className='container'>
+    
       <BrowserRouter>
       <Header/>
       <Routes>
@@ -26,7 +26,7 @@ function App() {
       <Route path='/updatepost/:id' element={<UpdatePost/>}/> 
       </Routes>
       </BrowserRouter>
-    </div>
+    
   )
 }
 
